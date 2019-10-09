@@ -33,8 +33,6 @@ except ImportError:
     exit()
 
 
-# PROXY = {'http':'socks5h://127.0.0.1:9050', 'https':'socks5h://127.0.0.1:9050'} # tor proxy
-
 def SAVE_URLS(URLs, FILE):
     read_file = str()
 
@@ -99,7 +97,9 @@ def GET_DATA(args, **kwargs):
             GET = SIS.get(f"{Url}{Path_search}{Target}&start={Number}{'&filter=0' if int(Number) > 0 else '' }")
             
             if GET.status_code != 200:
+                print(f"[{R}!!!{N}] You've been banned from Google")
                 return 'gogend'
+
         except TimeoutError:
             print(f"[{R}!!!{N}] Timeout Error");exit()
         
