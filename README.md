@@ -130,9 +130,8 @@ $ ./spread_bot.py
 ----------------------------------------------------------------------------------------------------
 ### _Photos_
 
-<img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/1.png">
-<img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/2.png">
-<img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/3.png">
+<img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/2.png" width=600px>
+<img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/3.png" width=600px>
 ----------------------------------------------------------------------------------------------------
 
 ### :warning: Warning!
