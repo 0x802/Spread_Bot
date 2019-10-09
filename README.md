@@ -111,7 +111,7 @@ $ ./spread_bot.py
 [ * ] Enter Name in the content of the message    : example
 [ * ] Enter Email in the content of the message   : example@example.com
 [ * ] Enter Text in the content of the message    : Do You Like Spread Bot ?
-[ * ] Enter Name File Url List default[target.txt]: 
+[ * ] Enter Name File Url List 		          : target.txt
 
    ____ ___  ____ ____ ____ ___   ___  ____ ___ 
    [__  |__] |__/ |___ |__| |  \  |__] |  |  |  
