@@ -9,12 +9,12 @@
 <h4 align="center">Spread Bot is a postman designed to send a specific message to a large number of sites</h4>
 
 
-![Screenshot from 2019-06-19 05-22-04]()
-
-
 ----------------------------------------------------------------------------------------------------
 ### _Why Spread Bot_
-******
+
+because it helps you to deliver a message to a thousand sites and also sorting sites that have accepted messages that did not accept and also does not leave any trace at the target sites etc...
+
+----------------------------------------------------------------------------------------------------
 ###  _Features_
 
 - easy to use
@@ -130,9 +130,9 @@ $ ./spread_bot.py
 ----------------------------------------------------------------------------------------------------
 ### _Photos_
 
-<img src="https://pbs.twimg.com/profile_images/1081178168139173888/gu-s0K9T_200x200.jpg" alt="Spread Bot">
-<img src="https://pbs.twimg.com/profile_images/1081178168139173888/gu-s0K9T_200x200.jpg" alt="Spread Bot">
-<img src="https://pbs.twimg.com/profile_images/1081178168139173888/gu-s0K9T_200x200.jpg" alt="Spread Bot">
+<img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/1.png">
+<img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/2.png">
+<img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/3.png">
 ----------------------------------------------------------------------------------------------------
 
 ### :warning: Warning!
