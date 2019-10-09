@@ -4,7 +4,7 @@
 import os
 import sys
 import time
-from modules.dork import * 
+from modules.tools import * 
 
 try:
     import requests
@@ -32,12 +32,7 @@ except ImportError:
     print(f"[{R}!!!{N}] Error import 'bs4' model ")
     exit()
 
-# COLORS
-R = '\033[31m'
-T = '\033[33m'
-B = '\033[34m'
-W = '\033[37m'
-N = '\033[0m'
+
 # PROXY = {'http':'socks5h://127.0.0.1:9050', 'https':'socks5h://127.0.0.1:9050'} # tor proxy
 
 def SAVE_URLS(URLs, FILE):
