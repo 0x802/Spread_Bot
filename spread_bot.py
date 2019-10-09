@@ -420,10 +420,9 @@ if __name__ == "__main__":
     # Path Url List
     if PATH_URL_LIST is '':
         PATH_URL_LIST = input(f"[ {B}*{N} ] Enter Name File Url List: ")
-        PATH_URL_LIST = os.path.join(os.getcwd(), PATH_URL_LIST)
 
         if PATH_URL_LIST is  '':
-            PATH_URL_LIST = os.path.join(os.getcwd(), "target.txt")
+            PATH_URL_LIST = "target.txt"
     else:
         pass
     
