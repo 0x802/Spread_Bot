@@ -109,7 +109,7 @@ $ ./spread_bot.py -n example -e example@example.com -m "Do You Like Spread Bot ?
 $ ./spread_bot.py 
 
 [ * ] Enter Name in the content of the message    : example
-[ * ] Enter Email in the content of the message   : example@example.com
+[ * ] Enter Email in the content of the message   : 
 [ * ] Enter Text in the content of the message    : Do You Like Spread Bot ?
 [ * ] Enter Name File Url List 		          : target.txt
 
@@ -120,8 +120,8 @@ $ ./spread_bot.py
 --------------------------------------------------
 |		Details Of Your Message
 |
-| [ + ] Name     : anonymous
-| [ + ] Email    : anonymous@gmail.com
+| [ + ] Name     : example
+| [ + ] Email    : example@example.com
 | [ + ] Message  : Do You Like Spread Bot ?
 | [ + ] Url List : /<path>/target.txt
 |
@@ -132,6 +132,7 @@ $ ./spread_bot.py
 
 <img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/2.png" width=600px>
 <img src="https://raw.githubusercontent.com/HathemAhmed/Spread_Bot/master/images/3.png" width=600px>
+
 ----------------------------------------------------------------------------------------------------
 
 ### :warning: Warning!
