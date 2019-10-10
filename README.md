@@ -141,6 +141,6 @@ $ ./spread_bot.py
 
 
 ### _info_
-	GitHub profile : https://github.com/HathemAhmed
-	E-mail address : hathem63636@gmail.com
+- GitHub profile : https://github.com/HathemAhmed
+- E-mail address : hathem63636@gmail.com
 
