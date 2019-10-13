@@ -63,20 +63,6 @@ $ ./spread_dork.py <dork>
 **Example:**
 ```bash
 $ ./spread_dork.py "inurl:contact site:co.ir" 
-[ * ] File Output defelt is target.txt [ Y/N ]: Y 
-
-   ____ ___  ____ ____ ____ ___   ___  ____ ___ 
-   [__  |__] |__/ |___ |__| |  \  |__] |  |  |  
-   ___] |    |  \ |___ |  | |__/  |__] |__|  |  
-                                         
-
-
---------------------------------------------------
-[ + ] Dork  : inurl:contactus site:co.ir
-[ + ] Result: 1000
-[ + ] File  : target.txt
-[==>] Plaes Wite....
---------------------------------------------------
 ```
 
 **Make the main tool work**
@@ -88,44 +74,11 @@ $ ./spread_bot.py -n <name> -e <email> -m <text>
 **Example:**
 ```bash
 $ ./spread_bot.py -n example -e example@example.com -m "Do You Like Spread Bot ?" -f target.txt
-
-   ____ ___  ____ ____ ____ ___   ___  ____ ___ 
-   [__  |__] |__/ |___ |__| |  \  |__] |  |  |  
-   ___] |    |  \ |___ |  | |__/  |__] |__|  |  
-                                         
---------------------------------------------------
-|		Details Of Your Message
-|
-| [ + ] Name     : example
-| [ + ] Email    : example@example.com
-| [ + ] Message  : Do You Like Spread Bot ?
-| [ + ] Url List : /<path>/target.txt
-|
---------------------------------------------------
 ```
 
 **Or** 
 ```bash
 $ ./spread_bot.py 
-
-[ * ] Enter Name in the content of the message    : example
-[ * ] Enter Email in the content of the message   : 
-[ * ] Enter Text in the content of the message    : Do You Like Spread Bot ?
-[ * ] Enter Name File Url List 		          : target.txt
-
-   ____ ___  ____ ____ ____ ___   ___  ____ ___ 
-   [__  |__] |__/ |___ |__| |  \  |__] |  |  |  
-   ___] |    |  \ |___ |  | |__/  |__] |__|  |  
-                                         
---------------------------------------------------
-|		Details Of Your Message
-|
-| [ + ] Name     : example
-| [ + ] Email    : example@example.com
-| [ + ] Message  : Do You Like Spread Bot ?
-| [ + ] Url List : /<path>/target.txt
-|
---------------------------------------------------
 ```
 ----------------------------------------------------------------------------------------------------
 ### _Photos_
