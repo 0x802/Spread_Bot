@@ -197,27 +197,27 @@ def GET_CHACK_URL_CONTENT(*args, **kwargs):
                 if CON.status_code == 200:
    
                     error = 0
-                    print(f"{OKGET} Status {URL[0:30]+'...' if len(URL) >= 30 else URL} is {G}{CON.status_code}{N}")
+                    print(f"{OKGET} Status {URL[0:40]+'...' if len(URL) >= 40 else URL} is {G}{CON.status_code}{N}")
 
                 else:
    
                     error = 1
-                    print(f"{NOGET} Status {URL[0:30]+'...' if len(URL) >= 30 else URL} is {R}{CON.status_code}{N}")
+                    print(f"{NOGET} Status {URL[0:40]+'...' if len(URL) >= 40 else URL} is {R}{CON.status_code}{N}")
 
             except requests.exceptions.ConnectionError:
    
                 error = 2
-                print(f"{NOGET} {CONNECTIONERROR} {URL[0:30]+'...' if len(URL) >= 30 else URL}")
+                print(f"{NOGET} {CONNECTIONERROR} {URL[0:40]+'...' if len(URL) >= 40 else URL}")
 
             except requests.exceptions.MissingSchema:
    
                 error = 2
-                print(f"{NOGET} {PROBLEMWEBSITE} {URL[0:30]+'...' if len(URL) >= 30 else URL}")
+                print(f"{NOGET} {PROBLEMWEBSITE} {URL[0:40]+'...' if len(URL) >= 40 else URL}")
 
     except TimeoutError:
    
         error = 3
-        print(f"{NOGET} {TIMEOUTERROR} {URL[0:30]+'...' if len(URL) >= 30 else URL}")
+        print(f"{NOGET} {TIMEOUTERROR} {URL[0:40]+'...' if len(URL) >= 40 else URL}")
 
 
        
@@ -279,11 +279,11 @@ def PROCESSING(*args, **kwargs):
                 PRO = rTARGETs.result()
 
             except RuntimeError:
-                print(f"{NOSYS} {TIMEOUTERROR} {i[0:30]+'...' if len(i)>=30 else i} ")
+                print(f"{NOSYS} {TIMEOUTERROR} {i[0:40]+'...' if len(i)>=40 else i} ")
                 continue
             
             except requests.exceptions.TooManyRedirects:
-                print(f"{NOSYS} {TIMEOUTERROR} Exceeded 30 redirects {i[0:30]+'...' if len(i)>=30 else i} ")
+                print(f"{NOSYS} {TIMEOUTERROR} Exceeded 40 redirects {i[0:40]+'...' if len(i)>=40 else i} ")
                 continue
                 
 
@@ -347,7 +347,7 @@ def PROCESSING(*args, **kwargs):
                     message = i.get("name")
 
                 if name == '' or email == '' or message == '':
-                    print(f"{NOSET} {NOFORM} {PRO.url[0:30]+'...' if len(PRO.url) >= 30 else PRO.url}")
+                    print(f"{NOSET} {NOFORM} {PRO.url[0:40]+'...' if len(PRO.url) >= 40 else PRO.url}")
                     continue
                 
                 else:
@@ -357,22 +357,22 @@ def PROCESSING(*args, **kwargs):
                         rTARGET = EX.submit(GET_SEND_MESSAGE, f"{p_name}#|{p_email}#|{p_message}#|{hidden if hidden != '' else ''}#|{PRO.url}#|{name}#|{email}#|{hidden_v}#|{message}")
                         PRO2 = rTARGET.result()
 
-                        print(f"{FORM} {'Name':<10} : {name}\n{FORM} {'Email':<10} : {email}\n{FORM} {'Message':<10} : {message}\n{FORM} {'Hidden':<10} : {hidden_v[0:30]+'...' if len(hidden_v) >= 30 else hidden_v}")
+                        print(f"{FORM} {'Name':<10} : {name}\n{FORM} {'Email':<10} : {email}\n{FORM} {'Message':<10} : {message}\n{FORM} {'Hidden':<10} : {hidden_v[0:40]+'...' if len(hidden_v) >= 40 else hidden_v}")
 
                         if  'connect#|' in PRO2:
                             print(f"{NOSET} {CONNECTIONERROR} {args[0]}/{i}")
                             continue
                             
                         elif 'time#|' in PRO2:
-                            print(f"{NOSET} {TIMEOUTERROR} {PRO.url[0:30]+'...' if len(PRO.url) >= 30 else PRO.url}")
+                            print(f"{NOSET} {TIMEOUTERROR} {PRO.url[0:40]+'...' if len(PRO.url) >= 40 else PRO.url}")
                             continue
                        
                         elif 'code#|' in PRO2:
-                            print(f"{NOSET} Status {PRO.url[0:30]+'...' if len(PRO.url) >= 30 else PRO.url} is {PRO2.split('#|')[1]}")
+                            print(f"{NOSET} Status {PRO.url[0:40]+'...' if len(PRO.url) >= 40 else PRO.url} is {PRO2.split('#|')[1]}")
                             continue    
                         
                         elif PRO2 == 'ok':
-                            print(f"{OKSET} Send message for {PRO.url[0:30]+'...' if len(PRO.url) >= 30 else PRO.url}")
+                            print(f"{OKSET} Send message for {PRO.url[0:40]+'...' if len(PRO.url) >= 40 else PRO.url}")
                    
                     except RuntimeError:
                         print(f"{NOSYS} {TIMEOUTERROR} {i}")
