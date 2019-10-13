@@ -140,8 +140,13 @@ def GET_URLS(*args, **kwargs):
                 lDATA = rDATA.result()
             
             except RuntimeError:
-                PINDEX(['','','', [],args[1]])
-                continue
+                print(f"[ {R}!{N} ] Sorry Time Out {TIMEOUT + 1}")
+            
+                if TIMEOUT >= 3:
+                    exit()
+                else:
+                    TIMEOUT += 1
+                    continue
             
             except KeyboardInterrupt:
                 break
