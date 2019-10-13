@@ -97,7 +97,7 @@ def GET_DATA(args, **kwargs):
             GET = SIS.get(f"{Url}{Path_search}{Target}&start={Number}{'&filter=0' if int(Number) > 0 else '' }")
             
             if GET.status_code != 200:
-                print(f"[{R}!!!{N}] You've been banned from Google")
+                print(f"[{R}!!!{N}] Sorry You've been banned from Google")
                 return 'gogend'
 
         except TimeoutError:
