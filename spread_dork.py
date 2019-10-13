@@ -189,6 +189,12 @@ if __name__ == "__main__":
     except:
         pass
     
+    # Help ...
+    if '-h' in sys.argv or '--help' in sys.argv:
+        print(f"Example:\n\tpython3 {s} inurl:contactus site:np")
+        exit()
+
+    # File urls save.
     FILE = input(f"[ {R}*{N} ] File Output default is target.txt [ Y/N ]: ")
     if FILE.upper() == 'Y' or FILE == '':
         FILE = 'target.txt'    
@@ -196,7 +202,7 @@ if __name__ == "__main__":
     else:
         FILE = input(f"[ {R}*{N} ] Enter Path File Output: ")
 
-
+    
     if dork != []:
         if len(dork) >= 1:
             DORK = str()
