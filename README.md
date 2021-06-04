@@ -92,8 +92,3 @@ $ ./spread_bot.py
 
 ***I Am Not Responsible of any Illegal Use***
 
-
-### _info_
-- GitHub profile : https://github.com/HathemAhmed
-- E-mail address : hathem63636@gmail.com
-
